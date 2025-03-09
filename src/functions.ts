@@ -8,6 +8,7 @@
  */
 function greet(name: string): void {
   // Your code here
+  console.log(`Hello ${name}`);
 }
 
 /**
@@ -21,8 +22,14 @@ function greet(name: string): void {
  */
 function isOdd(n: number): boolean {
   // Your code here
+  const oddNum = n % 2 !== 0;
 
-  return false; // replace false with what you see is fit
+  return oddNum;
+
+  // if(n% 2 !==0){
+  //   return true
+  // }
+  // return false
 }
 
 /**
@@ -36,8 +43,7 @@ function isOdd(n: number): boolean {
  */
 function oddsSmallerThan(n: number): number {
   // Your code here
-
-  return -1; // replace -1 with what you see is fit
+  return Math.ceil((n - 1) / 2);
 }
 
 /**
@@ -52,8 +58,7 @@ function oddsSmallerThan(n: number): number {
  */
 function squareOrDouble(n: number): number {
   // Your code here
-
-  return -1; // replace -1 with what you see is fit
+  return n % 2 === 0 ? n * 2 : n * n;
 }
 
 export { greet, isOdd, oddsSmallerThan, squareOrDouble };
